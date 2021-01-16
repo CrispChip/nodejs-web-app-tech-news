@@ -2,6 +2,10 @@ body {
     background-color: rgb(240,245,245);
 }
 
+.navbar-basic {
+    background-color: rgb(0,83,214);
+}
+
 a {
   color: #00B7FF;
 }
@@ -39,6 +43,7 @@ a {
 icon:hover {
     background-color: rgb(255,219,19);
     transition: 0.2s;
+    cursor: pointer;
 }
 
 .icon-share {
@@ -61,11 +66,20 @@ icon:hover {
     color: rgb(141,54,159);
 }
 
+.icon-bookmark {
+    background-color: rgb(225,20,75);
+}
+
+    .icon-bookmark:active {
+        background-color: rgb(161, 10, 50);
+        cursor: pointer;
+    }
+
 .centered {
     position: relative;
     top: 25%;
     left: 25%;
-    transform:translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 .btn-explore {
@@ -75,4 +89,12 @@ icon:hover {
 
 .link-clean {
     text-decoration: none;
+}
+
+.bg-blue {
+    background-color: rgb(0,83,214);
+}
+
+#bt-override .nav-link {
+    color: white;
 }

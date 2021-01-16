@@ -1,12 +1,15 @@
 {
   "ExpandedNodes": [
     "",
+    "\\bin",
     "\\public",
     "\\public\\images",
+    "\\public\\javascripts",
     "\\public\\stylesheets",
     "\\routes",
+    "\\templates",
     "\\views"
   ],
-  "SelectedNode": "\\public\\images\\ocean.jpg",
+  "SelectedNode": "\\package.json",
   "PreviewInSolutionExplorer": false
 }

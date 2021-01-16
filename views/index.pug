@@ -1,0 +1,120 @@
+html
+    head
+      title Index
+      link(href='/stylesheets/bootstrap.min.css' rel='stylesheet')
+      link(href='/stylesheets/style.css' rel='stylesheet')
+      link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css')
+      script(src='javascripts/jquery-3.5.1.min.js')
+
+    body
+        block header-extension
+        .container
+          .row.justify-content-evenly.gy-4
+            .row.gy-5
+              h3.text-center.text The Latest Posts
+            .col-5
+              .card.border-0.w-100.h-100(style='width: 18rem;')
+                img.card-img-top(src='images/drape.jpg' alt='...')
+                .card-body.card-color
+                  .row.justify-content-start
+                    .col-1.icon
+                      i.bi.bi-file-text-fill.icon-color.centered
+                    .col
+                      p.card-text.card-text-color BLOG POST
+                  .p-3
+                    a.link-clean(href='#')
+                      h2.card-text.card-title MuZero: Mastering Go, chess, shogi and Atari without rules
+                    p.card-text-color
+                      | Planning winning strategies in unknown environments is a step forward in the pursuit of general-purpose algorithms.
+                    .row.align-items-start
+                      .col-md
+                        p.card-text
+                          small.text-muted Last updated 3 mins ago
+                      .col-md
+                        .row
+                          .col-6
+                          .col-2
+                            .icon.icon-bookmark
+                              i.bi.bi-bookmark-plus-fill.icon-color.centered
+                          .col-2
+                            .icon.icon-download
+                              i.bi.bi-arrow-bar-down.icon-color.centered
+                          .col-2
+                            .icon.icon-share
+                              i.bi.bi-share.icon-color.centered
+                    // <button type="button" class="btn btn-primary btn-explore">Explore</button>
+            .col-5
+              .card.border-0.w-100.h-100(style='width: 18rem;')
+                img.card-img-top(src='images/ocean.jpg' alt='...')
+                .card-body.card-color
+                  .row.justify-content-start
+                    .col-1.icon
+                      i.bi.bi-file-text-fill.icon-color.centered
+                    .col
+                      p.card-text.card-text-color RESEARCH
+                  .p-3
+                    h2.card-text.card-title Next-Gen Ocean Simulations
+                    p.card-text-color
+                      | Planning winning strategies in unknown environments is a step forward in the pursuit of general-purpose algorithms.
+                    .row.align-items-start
+                      .col-md
+                        p.card-text
+                          small.text-muted Last updated 3 mins ago
+                      .col-md
+                        .row
+                          .col-8
+                          .col-2
+                            .icon-download
+                              i.bi.bi-arrow-bar-down.icon-color.centered
+                          .col-2
+                            .icon-share
+                              i.bi.bi-share.icon-color.centered
+            .col-5
+              .card.border-0.w-100.h-100(style='width: 18rem;')
+                img.card-img-top(src='images/blob.jpg' alt='...')
+                .card-body.card-color
+                  .row.justify-content-start
+                    .col-1.icon-basic
+                      i.bi.bi-file-text-fill.icon-color.centered
+                    .col
+                      p.card-text.card-text-color ARTICLE
+                  .p-3
+                    h2.card-text.card-title Soft-Body Simulations
+                    p.card-text-color
+                      | Planning winning strategies in unknown environments is a step forward in the pursuit of general-purpose algorithms.
+                    p.card-text
+                      small.text-muted Last updated 6 hours ago
+            .col-5
+              .card.border-0.w-100.h-100(style='width: 18rem;')
+                img.card-img-top(src='images/inflation.jpg' alt='...')
+                .card-body.card-color
+                  .row.justify-content-start
+                    .col-1.icon-basic
+                      i.bi.bi-file-text-fill.icon-color.centered
+                    .col
+                      p.card-text.card-text-color RESEARCH
+                  .p-3
+                    h2.card-text.card-title Next-Gen Ocean Simulations
+                    p.card-text-color
+                      | Planning winning strategies in unknown environments is a step forward in the pursuit of general-purpose algorithms.
+                    p.card-text
+                      small.text-muted Last updated 6 hours ago
+            .card.w-100
+              img.card-img-top(src='images/softbody.jpg' alt='...')
+              .card-body
+                h5.card-title Card title
+                p.card-text
+                  | This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                p.card-text
+                  small.text-muted Last updated 3 mins ago
+          .row.gy-5
+        //
+          <script>
+          $(document).ready(function () {
+          console.log("Document is Ready.");
+          $(".card").click(function () {
+          $(this.parentElement).remove();
+          console.log("Pressed an icon!");
+          });
+          });
+          </script>
